@@ -8,7 +8,7 @@
         "bathrooms": 2,
         "floor_area": 200,
         "city": "Quezon City",
-        "url": "../assets/sample.jpeg"
+        "img": ["../src/assets/sample.jpeg","../src/assets/sample.jpeg"]
     },
     {
         "listing_num": 2,
@@ -19,7 +19,7 @@
         "bathrooms": 2,
         "floor_area": 150,
         "city": "Makati",
-        "url": "../assets/sample.jpeg"
+        "img": ["../src/assets/sample.jpeg","../src/assets/sample.jpeg"]
     },
     {
         "listing_num": 3,
@@ -30,7 +30,7 @@
         "bathrooms": 3,
         "floor_area": 180,
         "city": "Pasig",
-        "url": "../assets/sample.jpeg"
+        "img": ["../src/assets/sample.jpeg","../src/assets/sample.jpeg"]
     },
     {
         "listing_num": 4,
@@ -41,7 +41,7 @@
         "bathrooms": 3,
         "floor_area": 250,
         "city": "Manila",
-        "url": "../assets/sample.jpeg"
+        "img": ["../src/assets/sample.jpeg","../src/assets/sample.jpeg"]
     },
     {
         "listing_num": 5,
@@ -52,6 +52,6 @@
         "bathrooms": 1,
         "floor_area": 50,
         "city": "Taguig",
-        "url": "../assets/sample.jpeg"
+        "img": ["../src/assets/sample.jpeg","../src/assets/sample.jpeg"]
     }
 ]

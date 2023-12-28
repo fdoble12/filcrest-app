@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-[#303030] p-4 fixed w-full mb-16 md:mb-4 lg:mb-6 z-40">
+    <nav class="bg-[#303030] p-4 w-full md:mb-4 lg:mb-6 z-40">
       <div class="container mx-auto flex flex-wrap justify-between items-center">
         <div class="text-white text-2xl md:text-3xl lg:text-2xl mb-2 md:mb-0 font-serif">
           <a href="#hero" class="text-white hover:text-yellow-600">Filcrest Realty</a>

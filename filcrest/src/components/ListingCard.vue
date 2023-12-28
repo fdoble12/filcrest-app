@@ -2,7 +2,7 @@
     <div class="bg-white shadow-md border-2 border-gray-200 flex-col flex rounded-md">
       <div class="mb-4">
         <img
-          src="../assets/sample.jpeg"
+        v-bind:src="listing.img[0]"
           :alt="listing.title"
           class="w-full h-80 object-cover"
         />
@@ -16,17 +16,25 @@
           <span class="icon"><i class="fa fa-expand" aria-hidden="true"></i> {{ listing.floor_area }} sqm</span>
         </div>
       </div>
-      <button class="mx-4 my-2 py-2 bg-yellow-800 text-white text-lg rounded-lg">See more</button>
+      <button
+        class="mx-4 my-2 py-2 bg-yellow-800 text-white text-lg rounded-lg"
+        @click="goToListingPage"
+      >
+        See more
+      </button>
     </div>
   </template>
   
-  <script>
-  export default {
-    name: 'ListingCard',
-    props: {
-      listing: Object
-    },
+  <script setup>
+    import { useRouter } from 'vue-router';
     
-  };
+    const props = defineProps({
+      listing: Object
+    });
+    const router = useRouter();
+    
+    const goToListingPage = () => {
+      router.push({ name: 'ListingPage', params: { listingNum: props.listing.listing_num } });
+    };
   </script>
   
