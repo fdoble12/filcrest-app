@@ -1,16 +1,25 @@
 <template>
     <Nav/>
     <div id="listing-page" class="py-8">
-      <section class="container mx-auto w-full">
+      <section class="container mx-auto w-full mt-16">
         <h1 class="text-3xl font-bold mb-4">{{ listingData.title }}</h1>
-        <carousel :itemsToShow="1" :wrapAround="true" :autoplay="false">
-            <slide v-for="(pic, index) in listingData.img" :key="index">
-                <img v-bind:src="pic" class="max-h-full">
-            </slide>
-        </carousel>
-        <div class="mt-6">
-            <h1 class="text-2xl font-bold mb-4">P {{ listingData.price }}</h1>
-            <p class="mb-4">{{ listingData.description }}</p>
+        <div class="relative">
+            <carousel ref="myCarousel" :itemsToShow="1" :wrapAround="true" :autoplay="false">
+                <slide v-for="(pic, index) in listingData.img" :key="index">
+                    <img v-bind:src="pic" class="max-h-full">
+                </slide>
+            </carousel>
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl px-6 hover:text-gray-400" @click="prevSlide">
+                <i class="fa fa-chevron-left fa-2x"></i>
+            </button>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-xl px-6 hover:text-gray-400" @click="nextSlide">
+                <i class="fa fa-chevron-right fa-2x"></i>
+            </button>
+        </div>
+
+        <div class="mt-6 border-t-2 border-black pt-2">
+            <h1 class="text-3xl font-bold mb-4">P {{ listingData.price }}</h1>
+            <p class="mb-4 text-xl">{{ listingData.description }}</p>
             <div class="icon-container flex text-xl justify-start space-x-4 mt-4 text-md text-gray-800">
             <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> {{ listingData.bedrooms }} Bedrooms</span>
             <span class="icon"><i class="fa fa-shower" aria-hidden="true"></i> {{ listingData.bathrooms }} Bathrooms</span>
@@ -55,6 +64,12 @@
                 // Handle the case where the listing is not found
                 console.error('Listing not found');
             }
+        },
+        nextSlide() {
+            this.$refs.myCarousel.next();
+        },
+        prevSlide() {
+            this.$refs.myCarousel.prev();
         }
     },
     components: {
@@ -64,4 +79,6 @@
   },
 };
   </script>
+<style scoped>
+</style>
   

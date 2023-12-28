@@ -10,7 +10,7 @@
       <div class="px-4 pb-2">
         <h3 class="text-xl font-semibold mb-2">P {{ listing.price}}</h3>
         <p class="text-black text-lg text-justify">{{ listing.description }}</p>
-        <div class="icon-container flex justify-center space-x-4 mt-4 text-md text-gray-800">
+        <div class="icon-container flex justify-center space-x-3 mt-4 text-md text-gray-800">
           <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> {{ listing.bedrooms }} Bedrooms</span>
           <span class="icon"><i class="fa fa-shower" aria-hidden="true"></i> {{ listing.bathrooms }} Bathrooms</span>
           <span class="icon"><i class="fa fa-expand" aria-hidden="true"></i> {{ listing.floor_area }} sqm</span>
