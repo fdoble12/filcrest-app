@@ -1,0 +1,57 @@
+[
+    {
+        "listing_num": 1,
+        "title": "Spacious Modern Bungalow",
+        "price": 12000000,
+        "description": "A newly renovated bungalow with an open floor plan and modern amenities.",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "floor_area": 200,
+        "city": "Quezon City",
+        "url": "../assets/sample.jpeg"
+    },
+    {
+        "listing_num": 2,
+        "title": "Luxury High-Rise Condo",
+        "price": 18000000,
+        "description": "High-rise condominium offering stunning city views and top-of-the-line fixtures.",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "floor_area": 150,
+        "city": "Makati",
+        "url": "../assets/sample.jpeg"
+    },
+    {
+        "listing_num": 3,
+        "title": "Cozy Townhouse",
+        "price": 9500000,
+        "description": "Comfortable townhouse in a friendly neighborhood, perfect for new families.",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "floor_area": 180,
+        "city": "Pasig",
+        "url": "../assets/sample.jpeg"
+    },
+    {
+        "listing_num": 4,
+        "title": "Classic Filipino Family Home",
+        "price": 8500000,
+        "description": "Traditional Filipino home with spacious yard and close to schools and markets.",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "floor_area": 250,
+        "city": "Manila",
+        "url": "../assets/sample.jpeg"
+    },
+    {
+        "listing_num": 5,
+        "title": "Modern Studio Apartment",
+        "price": 5000000,
+        "description": "Chic studio apartment with modern design, ideal for young professionals.",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "floor_area": 50,
+        "city": "Taguig",
+        "url": "../assets/sample.jpeg"
+    }
+]
